@@ -12,10 +12,6 @@ int dayOfTheWeek(int day, int month, int year){
 
     int h = (day + ((13*(month + 1)/5) + K + (K/4) + (J/4) - 2*J) % 7); // the day of the week
 
-    if(h < 0){
-        h += 7;
-    }
-
     return h;
 }
 
